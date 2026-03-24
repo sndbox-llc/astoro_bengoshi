@@ -15,7 +15,7 @@ const sortedPosts = [...allBlogPosts].sort((a, b) => {
   <div class="list-group">
     {
       sortedPosts.map((post) => (
-        <a href={`/${post.slug}`} class="list-group-item list-group-item-action">
+        <a href={`/${post.id}`} class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1 text-brown">{post.data.title}</h5>
             <p class="small">{post.data.date.toLocaleDateString('ja-JP')}</p>
